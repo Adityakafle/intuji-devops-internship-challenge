@@ -1,35 +1,47 @@
-# php-hello-world
-A simple hello-world for composer
+# Intuji DevOps Internship Challenge
 
- [![Latest Stable Version](https://github.com/silarhi/php-hello-world/workflows/Tests/badge.svg)](https://github.com/silarhi/php-hello-world/workflows/Tests/badge.svg)
- [![Latest Stable Version](https://poser.pugx.org/silarhi/hello-world/v/stable)](https://packagist.org/packages/silarhi/hello-world)
-[![Total Downloads](https://poser.pugx.org/silarhi/hello-world/downloads)](https://packagist.org/packages/silarhi/hello-world)
-[![License](https://poser.pugx.org/silarhi/hello-world/license)](https://packagist.org/packages/silarhi/hello-world)
+This repository contains the solution to the Intuji DevOps Internship Challenge. The challenge involves setting up Docker, creating Dockerfiles, Docker Compose files, and configuring a Jenkins CI/CD pipeline for a PHP application.
 
+## Task Details
 
-[![SymfonyInsight](https://insight.symfony.com/projects/5d582202-1186-4ce7-82c7-c4d3a2c11807/big.svg)](https://insight.symfony.com/projects/5d582202-1186-4ce7-82c7-c4d3a2c11807)
+1. **Installing Docker with Script**
+   - Created the bash script for installation of docker , you can find it inside scripts folder
+	 ```bash
+   # Bash script to install Docker inside scripts folder
+   ./install_docker.sh
 
-Installation
-------------
+2. **Clone the Github Repo from the link**
+   - Cloned the GitHub repository (https://github.com/silarhi/php-hello-world.git).
+ ```bash
+   # Bash script to clone the project
+   git clone https://github.com/Adityakafle/intuji-devops-internship-challenge.git
+   - Created a Dockerfile to build a Docker image of the PHP application using Apache as the web server.
 
-Install with composer
-``` bash
-composer require silarhi/hello-world
-```
+3. **Pushing Docker Image to Docker Hub**
+   - Built and pushed the Docker image
+	```bash
+   # Bash script to install Docker inside scripts folder
+   docker build -t <image_name> .
 
-Run composer update
-``` bash
-composer update silarhi/hello-world
-```
+4. **Creating Docker Compose File**
+   - Developed a `docker-compose.yml` file to orchestrate the PHP application using Docker Compose.
 
-Usage
------
+5. **Setting Up Jenkins for CI/CD**
+   - Installed Jenkins and necessary plugins.
+	```bash
+	# Bash script to install Docker inside scripts folder
+   	./install_jenkins.sh
+   - Configured a Freestyle project in Jenkins to automate the CI/CD pipeline.
 
-``` php
-require_once __DIR__ . '/vendor/autoload.php';
+## Repository Structure
 
-use Silarhi\Hello;
+- `install_docker.sh`: Bash script for installing Docker.
+- `install_jenkins.sh`: Bash script for installing Jenkins.
+- `Dockerfile`: Dockerfile for building the PHP application with Apache.
+- `docker-compose.yml`: Docker Compose configuration file.
+- `Documentation/`: Directory containing screenshots and Documentation of task.
 
-$hello = new Hello();
-echo $hello->display() . "\n";
-```
+##PHP Content reproduce
+- clone the repo
+-Assuming docker installed, build the image and push it in dockerhub or you can run container using docker run command
+-Content of Hello.php can be seen in port 80 of your localhost
