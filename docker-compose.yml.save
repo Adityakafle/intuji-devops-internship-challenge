@@ -1,0 +1,8 @@
+version: '3.1'
+
+services:
+  web:
+    image: your_dockerhub_usernamelo-world
+    ports:
+      - "80:80"
+
