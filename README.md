@@ -27,6 +27,7 @@ This repository contains the solution to the Intuji DevOps Internship Challenge.
    - Installed Jenkins and necessary plugins.
 	```bash
    	./install_jenkins.sh
+
    - Configured a Freestyle project in Jenkins to automate the CI/CD pipeline.
 
 ## Repository Structure
@@ -38,6 +39,8 @@ This repository contains the solution to the Intuji DevOps Internship Challenge.
 - `Documentation/`: Directory containing screenshots and Documentation of task.
 
 ##PHP Content reproduce
-- clone the repo
+-Clone the repo
+
 -Assuming docker installed, build the image and push it in dockerhub or you can run container using docker run command
+
 -Content of Hello.php can be seen in port 80 of your localhost
