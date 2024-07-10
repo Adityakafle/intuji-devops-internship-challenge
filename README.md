@@ -7,7 +7,9 @@ This repository contains the solution to the Intuji DevOps Internship Challenge.
 
 1.  **Installing Docker with Script**
    - Created the bash script for installation of docker , you can find it inside 
-   - ./install_docker.sh
+   	```bash
+        ./install_jenkins.sh
+	
 
 2. **Clone the Github Repo from the link**
    - Cloned the GitHub repository (https://github.com/silarhi/php-hello-world.git).
@@ -28,7 +30,8 @@ This repository contains the solution to the Intuji DevOps Internship Challenge.
 	```bash
    	./install_jenkins.sh
 
-   - Configured a Freestyle project in Jenkins to automate the CI/CD pipeline.
+
+ Configured a Freestyle project in Jenkins to automate the CI/CD pipeline.
 
 ## Repository Structure
 
