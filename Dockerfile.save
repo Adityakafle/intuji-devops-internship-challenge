@@ -6,7 +6,7 @@ COPY . /var/www/html/
 # Set the working directory
 WORKDIR /var/www/html
 
-# Set the correct permissions
+# Set correct permissions
 RUN chown -R www-data:www-data /var/www/html && \
     chmod -R 755 /var/www/html
 
