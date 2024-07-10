@@ -6,16 +6,16 @@ This repository contains the solution to the Intuji DevOps Internship Challenge.
 
 
 1.  **Installing Docker with Script**
-   - Created the bash script for installation of docker , you can find it inside 
-   	```bash
-        ./install_jenkins.sh
+   - Create the bash script for installation of docker , you can find it inside 
+   
+    command: ./install_jenkins.sh
 	
 
 2. **Clone the Github Repo from the link**
-   - Cloned the GitHub repository (https://github.com/silarhi/php-hello-world.git).
-	 ```bash
-   git clone https://github.com/Adityakafle/intuji-devops-internship-challenge.git
-   - Created a Dockerfile to build a Docker image of the PHP application using Apache as the web server.
+   - Clone the GitHub repository (https://github.com/silarhi/php-hello-world.git)
+
+ command: git clone https://github.com/Adityakafle/intuji-devops-internship-challenge.git
+   - Create a Dockerfile to build a Docker image of the PHP application using Apache as the web server.
 
 3. **Pushing Docker Image to Docker Hub**
    - Built and pushed the Docker image
@@ -41,7 +41,8 @@ This repository contains the solution to the Intuji DevOps Internship Challenge.
 - `docker-compose.yml`: Docker Compose configuration file.
 - `Documentation/`: Directory containing screenshots and Documentation of task.
 
-##PHP Content reproduce
+## PHP Content reproduce
+
 -Clone the repo
 
 -Assuming docker installed, build the image and push it in dockerhub or you can run container using docker run command
